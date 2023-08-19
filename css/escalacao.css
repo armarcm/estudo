@@ -1,0 +1,75 @@
+*{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;
+}
+body{
+    /*imagem de fundo*/
+    width: 100%;
+    height: 100%;
+}
+header{
+    display: inline;
+}
+nav{
+    padding: 20px;
+    width: 100%;
+    height: 10%;
+    background-color: #dfe4e4;
+    text-align: right;
+}
+nav a{ 
+    text-decoration: none;
+} 
+body{background-image: url("/img/Flamengo.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+background-size: contain;
+}
+main{
+    width: 100%;
+    height: 80%;
+}
+
+ section.jogador{
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: sticky;
+    max-width: 100%;
+    height: 100%; 
+     /*cor de fundo e borda
+    border:0px solid aqua;*/
+    /* posicionamento dos box*/
+    display:flex;
+    /*alinhamento vertical*/
+    align-items: center;
+    flex-wrap: wrap;
+    /*alinhamento horizontal*/
+    justify-content:space-evenly;
+
+}
+.individuo{
+    /*cor de fundo e borda*/
+    background-color: #f2f5f5;
+    border: 2px solid rgb(0, 0, 0);
+    /* tamanho*/
+    height: 25%;
+    width: 18%;
+    font-family: 'Dancing Script', cursive;
+}
+footer{
+    height: 10%;
+    padding: 10;
+    background-color: rgb(131, 131, 131);
+    text-align: center;
+}
+
+#id01:hover{
+background-image: url("/img/fla4.jpg") ;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}

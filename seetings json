@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "window.zoomLevel": -1,
+    "editor.fontSize": 23,
+    "editor.renderLineHighlight": "gutter",
+    "terminal.integrated.fontSize": 23,
+    "editor.formatOnSave": true,
+    "editor.autoIndent": "full",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.renderControlCharacters": true,
+    "workbench.startupEditor": "newUntitledFile",
+}
