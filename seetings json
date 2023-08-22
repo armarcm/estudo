@@ -8,5 +8,5 @@
     "editor.autoIndent": "full",
     "workbench.iconTheme": "vscode-icons",
     "editor.renderControlCharacters": true,
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "newUntitledFile"
 }
