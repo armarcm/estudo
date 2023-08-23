@@ -7,16 +7,6 @@
 main{
     width: 100%;
     height:80%;
-    /*imagem de fundo*/
-    background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.5),
-    rgba(4, 3, 3, 0.966)
-  ), url("/img/times-brasil.jpg");
- /* width: 100%;
-  height: 100%;/*
-  -webkit-mask-image: linear-gradient(to top, transparent 1%, black 100%);
-  background-image: url(/img/times-brasil.jpg);*/
 
 }
 header{
@@ -32,30 +22,39 @@ nav{
 nav a{ 
     text-decoration: none;
 }
-* {
+* { padding: 0;
+    margin: 0;
     box-sizing: border-box;
   } 
   
- body
-.container{
+ body{
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    padding: 2%;
-    position: sticky;
-    max-width: 100%;
-    height: 100%; 
-     /*cor de fundo e borda
-    border:0px solid aqua;*/
-    /* posicionamento dos box*/
-    display:flex;
-    /*alinhamento vertical*/
-    align-items: center;
-    flex-wrap: wrap;
-    /*alinhamento horizontal
-    justify-content:space-evenly;
-    background-image: url("/img/Flamengo.gif");
-    background-repeat: none;*/
+    height: 100vh;
+    flex-direction: column;
+    background-color: aliceblue;
+    /*imagem de fundo*/
+    background-image: linear-gradient(
+            to bottom,
+            rgba(161, 125, 90, 0.4),
+            rgba(29, 24, 21, 0.966)
+          ), url("/img/times-brasil.jpg");
+    width: 100%;
+    height: 100%;
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, black 100%);
+         
+
+ }
+ .container{
+    position: relative;
+    height: 25%;
+    width: 18%;
+    cursor: pointer;
+    overflow: hidden;
 }
+.
+
 article .individuo{
     /*cor de fundo e borda*/
     background-color: #f2f5f5;
@@ -65,10 +64,7 @@ article .individuo{
     width: 18%;
     font-family: 'Dancing Script', cursive;
 }
-article .individuo #id1 :hover{
-    font-family: 'Courier New', Courier, monospace;
 
-}
 footer{
     height: 5%;
     padding: 10;

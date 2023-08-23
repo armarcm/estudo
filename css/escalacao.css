@@ -8,39 +8,45 @@
 body{
     /*imagem de fundo*/
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-image: url("/img/Flamengo.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+
 }
 header{
     display: inline;
 }
 nav{
-    padding: 20px;
+    padding: 40px;
     width: 100%;
     height: 10%;
+    font-size: xx-large;
     background-color: #dfe4e4;
     text-align: right;
 }
 nav a{ 
     text-decoration: none;
 } 
-body{background-image: url("/img/Flamengo.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
+
 main{
     width: 100%;
     height: 80%;
 }
 
-section.jogador {
-    justify-content: center;
-    padding: 2%;
+.jogador {
+    justify-content:center;
+    padding: 5%;
     position: sticky;
     max-width: 100%;
     height: 100%; 
-     /*cor de fundo e borda
-    border:0px solid aqua;*/
+     /*cor de fundo e borda*/
+    border:0px solid aqua;
     /* posicionamento dos box*/
     display:flex;
     /*alinhamento vertical*/
@@ -53,28 +59,62 @@ section.jogador {
 .individuo{
     /*cor de fundo e borda*/
     background-color: #f2f5f5;
-    border: 2px solid rgb(0, 0, 0);
+    border: 30px solid rgb(0, 0, 0);
     /* tamanho*/
-    height: 25%;
-    width: 18%;
+    height: 150px;
+    width: 150px;
     font-family: 'Dancing Script', cursive;
+}
+.container{
+    padding-top: 20px;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.container:hover .text{
+    visibility: visible;
+}
+.container:hover img{
+    transform: scale(1.1);
+}
+.image{
+    height: 150px;
+    width: 150px;
+}
+
+.image img{
+    height: 150px;
+    width: 150px;
+object-fit: cover;
+    }
+.text{
+    height: 150px;
+    width: 150px;
+    /* tamanho da fonte */
+    font-size: 1.2rem;
+    /* posicao */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    /*cor de fundo */
+    background: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    visibility: hidden;
+    transition: .1s ease;
+}
+.text h3{
+    margin-bottom: 1.2rem;
 }
 footer{
     height: 10%;
     padding: 10;
     background-color: rgb(131, 131, 131);
     text-align: center;
-}
-
-article p.jogador:hover {
-    visibility: hidden;
-
-
-}
-
-article p.imagem:hover {
-    background-image: url("/img/fla4.jpg");
-    backface-visibility: visible;
-    align-items: center;
-    justify-content: center;
 }
